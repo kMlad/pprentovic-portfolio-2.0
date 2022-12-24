@@ -12,7 +12,7 @@ interface P {
     showArrow: boolean;
 }
 
-const ProjectsBlock = ({ title, cards }: P): JSX.Element => {
+const ProjectsBlock = ({ title, cards, showArrow }: P): JSX.Element => {
     const { back } = useRouter();
     return (
         <section className="bg-black " id="projects">
@@ -30,9 +30,11 @@ const ProjectsBlock = ({ title, cards }: P): JSX.Element => {
                         />
                     ))}
                 </div>
-                <span onClick={() => back()} className="cursor-pointer">
-                    <Image src={arrow} alt="arrow" />
-                </span>
+                {showArrow && (
+                    <span onClick={() => back()} className="cursor-pointer">
+                        <Image src={arrow} alt="arrow" />
+                    </span>
+                )}
             </div>
         </section>
     );
