@@ -25,7 +25,7 @@ export default function Home() {
                 <Layout>
                     <HeroBlock {...hero} />
                     <AboutBlock {...about} />
-                    <ProjectsBlock title="Services" cards={projects} />
+                    <ProjectsBlock title="Services" cards={projects} showArrow={false}/>
                     <ToolsBlock title="Tools" tools={tools} />
                     <ContactFormBlock title="Contact me" />
                 </Layout>

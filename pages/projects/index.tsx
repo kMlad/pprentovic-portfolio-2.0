@@ -23,7 +23,7 @@ export default function Home() {
 
             <main className=" text-white">
                 <Layout>
-                    <ProjectsBlock title="Services" cards={projects} />
+                    <ProjectsBlock title="Services" cards={projects} showArrow/>
                     <></>
                 </Layout>
             </main>
