@@ -12,26 +12,25 @@ const Button = ({ text, type, link, onClickAction }: P): JSX.Element => {
     switch (type) {
         case "button":
             return (
-                <div className="py-3 px-8" onClick={onClickAction}>
+                <div
+                    className="py-3 px-8 bg-blue rounded-full"
+                    onClick={onClickAction}
+                >
                     <p className="text-white font-bold text-lg">{text}</p>
                 </div>
             );
-        case "link" && link:
+        case "link":
             return (
-                <Link href={link as string} passHref>
-                    <a>
-                        <div className="py-3 px-8">
-                            <p className="text-white font-bold text-lg">
-                                {text}
-                            </p>
-                        </div>
-                    </a>
+                <Link href={link as string}>
+                    <div className="py-3 px-8 bg-blue rounded-full">
+                        <p className="text-white font-bold text-lg">{link ? text : 'ERROR'}</p>
+                    </div>
                 </Link>
             );
         default:
             return (
-                <div className="h-20 w-20 bg-blue">
-                    <p className="text-white font-bold">ERRROR</p>
+                <div className="py-2 px-6 bg-blue rounded-full">
+                    <p className="text-white font-bold text-lg">ERROR</p>
                 </div>
             );
     }

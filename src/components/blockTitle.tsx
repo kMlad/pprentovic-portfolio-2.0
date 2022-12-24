@@ -6,7 +6,7 @@ interface P {
 
 const BlockTitle = ({title}: P): JSX.Element => {
     return (
-        <h3 className='text-2xl lg:text-5xl text-white'>{title}</h3>
+        <h3 className='text-2xl lg:text-5xl font-bold text-white'>{title}</h3>
     )
 }
 
