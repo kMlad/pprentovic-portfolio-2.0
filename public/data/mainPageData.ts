@@ -38,16 +38,16 @@ export const headerData: HeaderProps = {
     navLinks: [
         {
             text: "About me",
-            to: Router.pathname === "" ? "#about-me" : "/#about-me",
+            to: process.browser && Router.pathname === "" ? "#about-me" : "/#about-me",
         },
         {
             text: "Services",
-            to: Router.pathname === "" ? "#projects" : "/#projects",
+            to: process.browser && Router.pathname === "" ? "#projects" : "/#projects",
         },
-        { text: "Tools", to: Router.pathname === "" ? "#tools" : "/#tools" },
+        { text: "Tools", to: process.browser && Router.pathname === "" ? "#tools" : "/#tools" },
         {
             text: "Contact me",
-            to: Router.pathname === "" ? "#contact-me" : "/#contact-me",
+            to: process.browser && Router.pathname === "" ? "#contact-me" : "/#contact-me",
         },
     ],
     buttons: [{ text: "Projects", type: "link", link: "/projects" }],
