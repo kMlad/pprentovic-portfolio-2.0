@@ -7,6 +7,7 @@ import NavLink, { P as NavLinkProps } from "../components/navLink";
 import burger from "./assets/burger.png";
 import logo from "./assets/logo.png";
 import desktopLogo from "./assets/logoDesktop.png";
+import { useRouter } from "next/router";
 
 export interface P {
     navLinks: NavLinkProps[];
@@ -15,6 +16,7 @@ export interface P {
 }
 
 const Header = ({ navLinks, buttons, openBurgerMenu }: P): JSX.Element => {
+    const { pathname } = useRouter();
     return (
         <>
             <header
@@ -59,7 +61,11 @@ const Header = ({ navLinks, buttons, openBurgerMenu }: P): JSX.Element => {
                                 >
                                     <NavLink
                                         text={navLink.text}
-                                        to={navLink.to}
+                                        to={
+                                            pathname === ""
+                                                ? navLink.to
+                                                : `/${navLink.to}`
+                                        }
                                     />
                                 </span>
                             ))}

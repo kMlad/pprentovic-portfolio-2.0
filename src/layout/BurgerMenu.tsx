@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 import Button from "../components/button";
 import NavLink from "../components/navLink";
@@ -16,6 +17,7 @@ interface P {
 }
 
 const BurgerMenu = ({ icons, name, closeBurgerMenu, headerProps }: P) => {
+    const { pathname } = useRouter();
     return (
         <section
             id="burger-mobile"
@@ -43,13 +45,23 @@ const BurgerMenu = ({ icons, name, closeBurgerMenu, headerProps }: P) => {
                                 className="py-3"
                                 onClick={closeBurgerMenu}
                             >
-                                <NavLink text={navLink.text} to={navLink.to} />
+                                <NavLink
+                                    text={navLink.text}
+                                    to={
+                                        pathname === ""
+                                            ? navLink.to
+                                            : `/${navLink.to}`
+                                    }
+                                />
                             </span>
                         ))}
                     </div>
                     <div className="flex flex-col justify-between items-center mt-14">
                         {headerProps.buttons.map((btn, index) => (
-                            <span key={`burger-button-${index}`} onClick={closeBurgerMenu}>
+                            <span
+                                key={`burger-button-${index}`}
+                                onClick={closeBurgerMenu}
+                            >
                                 <Button
                                     text={btn.text}
                                     type="link"
@@ -65,7 +77,7 @@ const BurgerMenu = ({ icons, name, closeBurgerMenu, headerProps }: P) => {
                     <p className="text-white pt-3 pb-4">
                         You can also find me here
                     </p>
-                    <IconList iconLinks={icons} size="big" alignment="center"/>
+                    <IconList iconLinks={icons} size="big" alignment="center" />
                 </div>
             </div>
         </section>
