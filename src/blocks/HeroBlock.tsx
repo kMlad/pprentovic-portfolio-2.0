@@ -15,7 +15,7 @@ const HeroBlock = ({ title, subtitle, email, heroImage }: P): JSX.Element => {
     const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
     return (
         <section className="bg-black" id="hero">
-            <div className="flex flex-col lg:flex-row justify-between container lg:max-w-[84.5%] mx-auto lg:ml-auto">
+            <div className="flex flex-col lg:flex-row justify-between container 2xl:max-w-[88%] mx-auto lg:mx-0 lg:ml-auto">
                 <div className="flex flex-col items-start justify-start mt-[10%] w-full mb-2 lg:mb-0">
                     <h1 className="font-bold text-white text-2xl lg:text-6xl mb-4 lg:mb-6">
                         {title}
@@ -36,7 +36,7 @@ const HeroBlock = ({ title, subtitle, email, heroImage }: P): JSX.Element => {
                         <p className="text-white text-base lg:text-xl">{email}</p>
                     </a>
                 </div>
-                <Image src={heroImage} alt="Hero Image" />
+                <Image src={heroImage} alt="Hero Image" className="lg:w-1/2 heroBreakFour:w-auto"/>
             </div>
         </section>
     );

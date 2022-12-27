@@ -20,7 +20,7 @@ export const graphicDesign: ImageProjectBlockProps  = {
             button: {
                 type: "link",
                 text: "View Project",
-                link: "/project-butel",
+                link: "projects/bc-butel",
             },
         },
         {
@@ -33,7 +33,7 @@ export const graphicDesign: ImageProjectBlockProps  = {
             button: {
                 type: "link",
                 text: "View Project",
-                link: "/project-casa",
+                link: "projects/casa-3x3",
             },
         },
         {
@@ -46,7 +46,7 @@ export const graphicDesign: ImageProjectBlockProps  = {
             button: {
                 type: "link",
                 text: "View Project",
-                link: "/project-illustrations",
+                link: "projects/illustrations",
             },
         },
         {
@@ -59,7 +59,7 @@ export const graphicDesign: ImageProjectBlockProps  = {
             button: {
                 type: "link",
                 text: "View Project",
-                link: "/project-wedding",
+                link: "projects/wedding",
             },
         },
     ],
@@ -78,7 +78,7 @@ export const uxUiDesign: ImageProjectBlockProps = {
             button: {
                 type: "link",
                 text: "View Project",
-                link: "/project-affilidated-physicians",
+                link: "/projects/affiliated-physicians",
             },
         },
         {
@@ -91,7 +91,7 @@ export const uxUiDesign: ImageProjectBlockProps = {
             button: {
                 type: "link",
                 text: "View Project",
-                link: "/project-renoon",
+                link: "/projects/renoon",
             },
         },
         {
@@ -104,7 +104,7 @@ export const uxUiDesign: ImageProjectBlockProps = {
             button: {
                 type: "link",
                 text: "View Project",
-                link: "/project-brainster-hiring",
+                link: "projects/brainster-hiring",
             },
         },
     ],

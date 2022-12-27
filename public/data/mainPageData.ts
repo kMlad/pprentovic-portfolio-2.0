@@ -3,6 +3,7 @@ import { P as HeroProps } from "../../src/blocks/HeroBlock";
 import { P as AboutProps } from "../../src/blocks/AboutBlock";
 import { P as ProjectCardProps } from "../../src/components/projectCard";
 import { P as ToolProps } from "../../src/components/tool";
+import Router from "next/router";
 
 import fbIcon from "../assets/fb-icon.png";
 import liIcon from "../assets/li-icon.png";
@@ -35,10 +36,19 @@ export const author = {
 
 export const headerData: HeaderProps = {
     navLinks: [
-        { text: "About me", to: "#about-me" },
-        { text: "Services", to: "#projects" },
-        { text: "Tools", to: "#tools" },
-        { text: "Contact me", to: "#contact-me" },
+        {
+            text: "About me",
+            to: Router.pathname === "" ? "#about-me" : "/#about-me",
+        },
+        {
+            text: "Services",
+            to: Router.pathname === "" ? "#projects" : "/#projects",
+        },
+        { text: "Tools", to: Router.pathname === "" ? "#tools" : "/#tools" },
+        {
+            text: "Contact me",
+            to: Router.pathname === "" ? "#contact-me" : "/#contact-me",
+        },
     ],
     buttons: [{ text: "Projects", type: "link", link: "/projects" }],
 };
