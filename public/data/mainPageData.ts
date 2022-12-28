@@ -37,7 +37,7 @@ export const author = {
 export const headerData: HeaderProps = {
     navLinks: [
         { text: "About me", to: "#about-me" },
-        { text: "Services", to: "#projects" },
+        { text: "Services", to: "#services" },
         { text: "Tools", to: "#tools" },
         { text: "Contact me", to: "#contact-me" },
     ],

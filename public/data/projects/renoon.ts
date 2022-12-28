@@ -1,12 +1,12 @@
 import { P as ProjectProps } from "../../../src/pages/ProjectPage";
 import desktopHero from "../../assets/projects/renoon/hero-desktop.png";
 import mobileHero from "../../assets/projects/renoon/hero-mobile.png";
-import showcase1 from '../../assets/projects/brainster/showcase-1.png'
-import showcase2 from '../../assets/projects/brainster/showcase-2.png'
-import showcase3 from '../../assets/projects/brainster/showcase-3.png'
-import showcase4 from '../../assets/projects/brainster/showcase-4.png'
-import showcase5 from '../../assets/projects/brainster/showcase-5.png'
-import showcase6 from '../../assets/projects/brainster/showcase-6.png'
+import showcase1 from '../../assets/projects/renoon/showcase-1.png'
+import showcase2 from '../../assets/projects/renoon/showcase-2.png'
+import showcase3 from '../../assets/projects/renoon/showcase-3.png'
+import showcase4 from '../../assets/projects/renoon/showcase-4.png'
+import showcase5 from '../../assets/projects/renoon/showcase-5.png'
+import showcase6 from '../../assets/projects/renoon/showcase-6.png'
 
 export const ProjectData: ProjectProps = {
     coverImage: {
@@ -97,7 +97,7 @@ export const ProjectData: ProjectProps = {
             },
             {
                 title: "Secondary Color",
-                hexCode: "#F5F5ED",
+                hexCode: "#000000",
             },
             {
                 title: "Background Color",

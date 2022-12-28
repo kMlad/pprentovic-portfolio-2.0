@@ -55,7 +55,6 @@ const ProjectPage = ({
                         unoptimized
                         src={coverImage.mobileImage}
                         alt={coverImage.alt}
-
                     />
                 )}
                 {!isMobile && (
@@ -83,7 +82,9 @@ const ProjectPage = ({
                                 className="flex flex-col"
                                 key={`meta-col-${index}`}
                             >
-                                <p className="font-bold lg:mb-5">{column.title}</p>
+                                <p className="font-bold lg:mb-5">
+                                    {column.title}
+                                </p>
                                 {column.records.map((record, innerIndex) => (
                                     <p
                                         key={`meta-col-${index}-row-${innerIndex}`}
@@ -133,7 +134,13 @@ const ProjectPage = ({
                             <h3 className="font-bold text-3xl">
                                 {panel.title}
                             </h3>
-                            <div className="flex flex-col lg:flex-row justify-between items-center">
+                            <div
+                                className={`flex flex-col lg:flex-row ${
+                                    panel.images.length % 2 !== 0
+                                        ? "justify-between"
+                                        : "justify-around"
+                                } items-center`}
+                            >
                                 {panel.images.map((image, index2) => (
                                     <Image
                                         key={`image-panel-${index}-image-${index2}`}

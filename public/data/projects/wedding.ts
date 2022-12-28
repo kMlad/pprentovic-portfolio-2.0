@@ -1,11 +1,11 @@
 import { P as ProjectProps } from "../../../src/pages/ProjectPage";
 import desktopHero from "../../assets/projects/wedding/hero-desktop.png";
 import mobileHero from "../../assets/projects/wedding/hero-mobile.png";
-import showcase1 from '../../assets/projects/brainster/showcase-1.png'
-import showcase2 from '../../assets/projects/brainster/showcase-2.png'
-import showcase3 from '../../assets/projects/brainster/showcase-3.png'
-import showcase4 from '../../assets/projects/brainster/showcase-4.png'
-import showcase5 from '../../assets/projects/brainster/showcase-5.png'
+import showcase1 from '../../assets/projects/wedding/showcase-1.png'
+import showcase2 from '../../assets/projects/wedding/showcase-2.png'
+import showcase3 from '../../assets/projects/wedding/showcase-3.png'
+import showcase4 from '../../assets/projects/wedding/showcase-4.png'
+import showcase5 from '../../assets/projects/wedding/showcase-5.png'
 
 export const ProjectData: ProjectProps = {
     coverImage: {

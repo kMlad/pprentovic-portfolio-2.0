@@ -15,7 +15,7 @@ interface P {
 const ProjectsBlock = ({ title, cards, showArrow }: P): JSX.Element => {
     const { back } = useRouter();
     return (
-        <section className="bg-black " id="projects">
+        <section className="bg-black " id="services">
             <div className="py-10 flex flex-col items-center sm:container sm:mx-auto lg:gap-y-16">
                 <BlockTitle title={title} />
                 <div className="py-11 flex flex-col lg:flex-row gap-y-[70px] lg:gap-y-0 justify-between w-full ">
