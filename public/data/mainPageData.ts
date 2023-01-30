@@ -29,7 +29,7 @@ export const images = {
 export const author = {
     name: "Petar",
     surname: "Prentovic",
-    email: "pprentovic10@gmail.com",
+    email: "prentovicp10@gmail.com",
     facebook: "https://www.facebook.com/petar.prentovic/",
     linkedin: "https://www.linkedin.com/in/petar-prentovic-802b54201/",
 };

@@ -68,7 +68,7 @@ const ProjectPage = ({
             </div>
             <div className="container mx-auto ">
                 <div className="flex flex-row items-center justify-between mb-16">
-                    <h1 className="font-bold text-[64px]">{title}</h1>
+                    <h1 className="font-bold text-[40px] lg:text-[64px]">{title}</h1>
                     <Image src={downArrow} alt="Down facing arrow" />
                 </div>
                 <section className="mb-10">
